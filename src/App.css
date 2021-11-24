@@ -1,0 +1,59 @@
+.section{
+    width:50%;
+    margin: 0 auto;
+    text-align: center;
+}
+.home{
+    margin-top: 10vh;
+}
+.section h1{
+    font-size: larger;
+    margin-bottom: 25px;
+    color: red;
+}
+.section ul li{
+    padding: 10px;
+    margin-bottom: 30px;
+    background: rgb(243, 243, 243);
+}
+a{
+    color: black
+}
+.section form{
+    display: flex;
+    flex-direction: column;
+}
+.section form{
+    width: 100%;
+}
+.section form textarea{
+    margin: 15px 0 15px 0;
+}
+.section button{
+    width :40%;
+    margin : 0 auto
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    background: rgba(226, 225, 225, 0.425);
+}
+header nav{
+    display:flex ;
+    justify-content: space-between;
+}
+header img{
+    margin: 10px 0 10px 0;
+}
+textarea{
+    padding: 5px;
+    text-align: center;
+}
+td{
+    border:solid 1px grey;
+    border-collapse: collapse;
+    padding: 5px;
+}
+.resulttable{
+    margin : 15px auto
+}
