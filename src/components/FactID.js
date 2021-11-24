@@ -43,7 +43,7 @@ class FactID extends React.Component {
                     <h1>Corriger le numéro de facturation</h1>
                     <h2>Copier la liste de numéros ci-dessous et cliquer sur "Valider"</h2>
                     <form onSubmit={this.handleSubmit}>
-                        <textarea placeholder="Saisissez le Numéro de facturation a 6 chiffres ex:'1234564'" onClick={this.test} name="idlist" value={this.state.textAreaValue} onChange={this.handleChange} rows="15" cols="33"/>
+                        <textarea placeholder="Saisissez le Numéro de facturation a 6 chiffres ex:'123456'" onClick={this.test} name="idlist" value={this.state.textAreaValue} onChange={this.handleChange} rows="15" cols="33"/>
                         <button type="submit" className="button is-danger">Valider</button>
                     </form>
                     <table className="resulttable">
