@@ -3,6 +3,16 @@
     margin: 0 auto;
     text-align: center;
 }
+@media only screen and (max-width: 1024px) {
+    .section{
+        width:70%;
+    }
+  }
+@media only screen and (max-width: 768px) {
+.section{
+    width:85%;
+}
+}
 .home{
     margin-top: 10vh;
 }
@@ -55,5 +65,5 @@ td{
     padding: 5px;
 }
 .resulttable{
-    margin : 15px auto
+    margin : 15px auto;
 }
