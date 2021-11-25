@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Header from './Header';
 
 class FactID extends React.Component {
@@ -12,7 +12,10 @@ class FactID extends React.Component {
         this.handleSubmit = this.handleSubmit.bind(this);
         this.test = this.test.bind(this);
       }
-    
+      componentDidMount(){
+        let a = document.getElementById('title');
+        a.innerHTML = 'Numéro de facturation'
+      }
       handleChange(event) {
         this.setState({ textAreaValue: event.target.value });
       }

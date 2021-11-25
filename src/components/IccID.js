@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Header from './Header';
 
 class IccID extends React.Component {
@@ -12,7 +12,10 @@ class IccID extends React.Component {
         this.handleSubmit = this.handleSubmit.bind(this);
         this.test = this.test.bind(this);
       }
-    
+      componentDidMount(){
+        let a = document.getElementById('title');
+        a.innerHTML = 'ICCID'
+      }
       handleChange(event) {
         this.setState({ textAreaValue: event.target.value });
       }
@@ -20,7 +23,6 @@ class IccID extends React.Component {
         const data = this.state.textAreaValue;
         this.dataline = data.split('\n').reverse()
         const tablebody = document.querySelector('.resulttable')
-        let j = '0';
         for ( let i = 0 ; i < this.dataline.length ;  i++ ){
             this.dataline[i] = this.dataline[i].replace('F', '')
             const line = tablebody.insertRow(0);

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Header from './Header';
 
 class ServiceID extends React.Component {
@@ -11,6 +11,10 @@ class ServiceID extends React.Component {
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
         this.test = this.test.bind(this);
+      }
+      componentDidMount(){
+        let a = document.getElementById('title');
+        a.innerHTML = 'Service ID'
       }
     
       handleChange(event) {
